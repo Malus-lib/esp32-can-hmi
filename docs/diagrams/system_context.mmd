@@ -1,0 +1,5 @@
+flowchart LR
+  PC[PC Tools\nPython + SocketCAN] <-->|CAN frames| BUS[(CAN Bus)]
+  BUS <-->|CAN frames| ESP[ESP32-S3-LCD-7B\nTWAI + Parser]
+  ESP --> HMI[HMI\nLVGL / UI]
+  ESP --> LOG[Diagnostics\nCounters + Logs]

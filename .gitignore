@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# Logs
+*.log
+*.csv
+*.bin
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# ESP-IDF
+firmware/**/build/
+firmware/**/sdkconfig
+firmware/**/sdkconfig.old
+firmware/**/.cache/
+firmware/**/managed_components/

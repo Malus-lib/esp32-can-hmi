@@ -1,0 +1,2 @@
+DEFAULT_CHANNEL = "vcan0"
+DEFAULT_INTERFACE = "socketcan"

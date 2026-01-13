@@ -1,0 +1,2 @@
+python-can>=4.4.0
+pytest>=8.0.0

@@ -1,0 +1,9 @@
+sequenceDiagram
+  participant ECU as ECU/Sim (PC Tools)
+  participant ESP as ESP32 TWAI
+  participant SM as State Model
+  participant UI as UI (LVGL)
+  ECU->>ESP: CAN PT_FAST / VEH_SPEED / ...
+  ESP->>SM: Decode + update signals + timestamps
+  UI->>SM: Read snapshot (every 50ms)
+  UI-->>UI: Render widgets + handle timeouts

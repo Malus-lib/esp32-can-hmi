@@ -1,0 +1,11 @@
+idf_component_register(
+  SRCS
+    "app_main.c"
+    "can/can_driver.c"
+    "can/can_parser.c"
+    "state/state_model.c"
+    "ui/ui_stub.c"
+    "util/timebase.c"
+  INCLUDE_DIRS
+    "."
+)

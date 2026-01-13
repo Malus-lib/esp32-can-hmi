@@ -1,0 +1,6 @@
+flowchart TB
+  RX[can_rx_task\nTWAI receive] --> Q[(Frame Queue)]
+  Q --> PARSE[parse_task\nDecode frames]
+  PARSE --> STATE[state_model\nvalid flags + last_seen]
+  UI[ui_task\nLVGL tick/render] --> SNAP[snapshot read]
+  SNAP --> STATE

@@ -1,0 +1,33 @@
+VERSION ""
+
+NS_ :
+BS_:
+BU_: HMI ECU
+
+BO_ 384 PT_FAST: 8 ECU
+ SG_ rpm : 0|16@1+ (1,0) [0|65535] "rpm" HMI
+ SG_ motor_current : 16|16@1- (0.1,0) [-3276.8|3276.7] "A" HMI
+ SG_ flags : 48|8@1+ (1,0) [0|255] "" HMI
+ SG_ counter : 56|8@1+ (1,0) [0|255] "" HMI
+
+BO_ 385 PT_SLOW: 8 ECU
+ SG_ motor_temp : 0|16@1- (0.1,0) [-3276.8|3276.7] "C" HMI
+ SG_ flags : 48|8@1+ (1,0) [0|255] "" HMI
+ SG_ counter : 56|8@1+ (1,0) [0|255] "" HMI
+
+BO_ 512 VEH_SPEED: 8 ECU
+ SG_ vehicle_speed : 0|16@1+ (0.01,0) [0|655.35] "km/h" HMI
+ SG_ flags : 32|8@1+ (1,0) [0|255] "" HMI
+ SG_ counter : 56|8@1+ (1,0) [0|255] "" HMI
+
+BO_ 528 ENERGY: 8 ECU
+ SG_ dc_bus_voltage : 0|16@1+ (0.01,0) [0|655.35] "V" HMI
+ SG_ flags : 32|8@1+ (1,0) [0|255] "" HMI
+ SG_ counter : 56|8@1+ (1,0) [0|255] "" HMI
+
+BO_ 1792 HEARTBEAT: 8 ECU
+ SG_ node_state : 0|8@1+ (1,0) [0|255] "" HMI
+ SG_ main_error : 8|8@1+ (1,0) [0|255] "" HMI
+ SG_ uptime_s : 16|16@1+ (1,0) [0|65535] "s" HMI
+ SG_ proto_ver : 32|8@1+ (1,0) [0|255] "" HMI
+ SG_ fw_ver : 40|16@1+ (1,0) [0|65535] "" HMI

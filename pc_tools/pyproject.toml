@@ -1,0 +1,8 @@
+[project]
+name = "canbench"
+version = "0.1.0"
+description = "CAN bench tools: scenarios + record/replay + codec"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["src/canbench/tests"]
